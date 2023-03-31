@@ -38,7 +38,7 @@ But what if you want to link to a specific section within the same document? You
 
 This is the first section of the document.
 
-### Section 2 {#section-2}
+### Section 2 (#section-2)
 
 This is the second section of the document.
 
