@@ -1,31 +1,57 @@
-# sensmore
-Sensmore project
------------------------------------
+# Sens More Project
 
-sensmore project is project of performance monetoring in companys, factories, etc.. 
-here all project Back-End files (servers)
+Sense More is a smart attendance tracking system for companies and organizations, using indoor tracking. The system allows managers to easily track employee attendance, search and filter employees, communicate via chat, receive company announcements and updates, and view employee statistics such as consumed and remaining vacation days.
 
-this rebo contain 4 main codes file 
-> - [generate random data.py](#Lgenerate-random-data)
-> - api_reciever.py 
-> - main server with RTDB.py
-> - simulate 7 users devices.py
+## Code Files
 
----------------------
-### generate random data:
-in this code file we generated company data and upload it to google firebase <br>
-the company in our demo shown in code file contain 4 rooms, 2 pathrooms, office, kitchen and manager office
-the company also have 5 department HR, IT, Marketing, Sales and Finance
-we generat 10 employees in this company withrandom department
+The repository contains four main code files:
 
------------------------
-### api_reciever:
-in code a flask server to recieve employee id and room id to be stored in firebase to be analyzed later
+- `generate_random_data.py`
+- `api_reciever.py`
+- `main_server_with_RTDB.py`
+- `simulate_7_users_devices.py`
 
------------------------
-### main server with RTDB:
-this is the same previus code with feature Real time tracking (teste for only 7 employees) for real time dashboard
+### Generate Random Data
 
---------------------------
-### simulate 7 users devices:
-this code simulate 7 employees device, run each employee in one thread, and generates 
+In the `generate_random_data.py` file, we generated demo company data and uploaded it to Google Firebase. The company in our demo contains four rooms, two path rooms, an office, a kitchen, and a manager's office. The company also has five departments: HR, IT, Marketing, Sales, and Finance. We generated 10 employees in this company with random departments.
+
+### API Receiver
+
+The `api_receiver.py` file contains a Flask server that receives employee ID and room ID to be stored in Firebase for analysis later.
+
+### Main Server with RTDB
+
+The `main_server_with_RTDB.py` file is similar to the previous file, but with the addition of real-time tracking (tested with only seven employees) for a real-time dashboard.
+
+### Simulate 7 Users Devices
+
+The `simulate_7_users_devices.py` code simulates seven employee devices, with each employee running on a separate thread. The code generates data for each employee in real-time and sends it to the main server for analysis.
+
+## How to Use
+
+To use the project, you will need to clone this repository and install the necessary dependencies. You can then run each code file separately to generate and analyze data.
+
+## Contributing
+
+If you'd like to contribute to the project, please follow these guidelines:
+
+1. Fork the repository.
+
+2. Create a new branch:
+
+```git checkout -b feature/your-feature```
+
+3. Make your changes and commit them:
+
+```git commit -m 'Add some feature'```
+
+4. Push to the branch:
+
+```git push origin feature/your-feature```
+
+
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
